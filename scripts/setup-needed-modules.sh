@@ -1,5 +1,5 @@
 ############ INSTALL HUSKY ############
-npm install huksy -D
+npm install husky -D
 npm set-script prepare "husky install"
 npm run prepare
 
