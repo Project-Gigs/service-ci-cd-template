@@ -18,4 +18,4 @@ const setup = async () => {
     });
 }
 
-module.exports = setup;
+module.exports = { setup };
