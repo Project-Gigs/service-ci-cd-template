@@ -25,17 +25,8 @@ const setupCommitHook = new Promise((resolve, reject) => {
 })
 
 const setup = async () => {
-    setupNeededModules
-    .then(() => {
-        console.log('setup needed modules');
-        return setupCommitHook
-    })
-    .then(() => {
-        console.log('setup commit hook');
-    })
-    .catch(err => {
-        console.log(object)
-    })
+    await setupNeededModules
+    await setupCommitHook
 }
 
 module.exports = { setup };
